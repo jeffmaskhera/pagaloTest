@@ -1,0 +1,16 @@
+.content-page-products {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.grid-product-list {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  gap: 20px;
+}

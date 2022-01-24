@@ -1,0 +1,46 @@
+.item-checkout {
+  display: grid;
+  grid-template-columns: 154px 1fr 160px;
+  gap: 25px;
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .content-values {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .spinner-btns {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    .btn-quantity {
+      border: 1px solid black;
+      border-radius: 4px;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  .value-public {
+    font-weight: 700;
+    text-align: center;
+  }
+
+
+}

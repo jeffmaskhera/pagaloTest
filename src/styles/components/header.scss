@@ -1,0 +1,130 @@
+.space-header {
+  height: 116px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  border-bottom: 1px solid black;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+
+  .relative{
+    position: relative;
+  }
+
+  .car {
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+
+    .itemNotification {
+      position: absolute;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background: #e9d522;
+      right: 0;
+      top: -10px;
+      font-size: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .content-car {
+    box-shadow: 2px 2px 10px 0px rgb(0 0 0 / 75%);
+    border-radius: 4px;
+    width: 300px;
+    max-height: 300px;
+    position: absolute;
+    right: 8px;
+    top: 125%;
+    z-index: 5;
+    background: white;
+    padding: 20px;
+    overflow: hidden;
+    display: grid;
+    gap: 20px;
+    .displayItemHeader {
+      max-height: 238px;
+      overflow-y: auto;
+      display: grid;
+      gap: 10px;
+      .item {
+        display: grid;
+        grid-template-columns: 73px auto;
+        gap: 15px;
+        align-items: center;
+        img {
+          width: 60px;
+          height: auto;
+        }
+
+        .grid-inter-info-items {
+          display: grid;
+          gap: 5px;
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+          }
+        }
+
+      }
+    }
+
+    .btn-continue {
+      background: #fa4644;
+      border-radius: 50px;
+      padding: 10px 20px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: unset;
+    }
+
+    .noneItems {
+      display: grid;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      height: 100px;
+    }
+
+
+  }
+
+  .absolute-close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+
+}
